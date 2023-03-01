@@ -75,7 +75,7 @@ class AppModule {
         return Room.databaseBuilder(
             app,
             HolidayDatabase::class.java,
-            "showdb.db"
+            "holidaydb.db"
         )
             .fallbackToDestructiveMigration()
             .build()

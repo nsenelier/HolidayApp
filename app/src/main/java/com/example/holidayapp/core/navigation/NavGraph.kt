@@ -20,7 +20,7 @@ fun NavGraph(navController: NavHostController,
 ) {
     NavHost(navController, startDestination = BottomNavItem.Home.screen_route) {
         composable(BottomNavItem.Home.screen_route) {
-            USHolidayScreen(navController)
+            USHolidayScreen(navController = navController, viewModel = usHolidayViewModel)
         }
         composable(BottomNavItem.Favorite.screen_route) {
             FavoriteScreen(navController=navController, viewModel = favoriteHolidayViewModel)
